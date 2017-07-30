@@ -1,6 +1,10 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var funnel = require('ember-cli/node_modules/broccoli-funnel');
+var mergeTrees = require('broccoli-merge-trees');
+
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
@@ -18,6 +22,26 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+
+  var fontawesome = new funnel('bower_components/font-awesome/fonts', {
+    srcDir: '/',
+    destDir: 'fonts'
+  });
+  var bootstrap = new funnel('bower_components/bootstrap/fonts', {
+    srcDir: '/',
+    destDir: 'fonts'
+  });
+
+  var merged = mergeTrees([app.toTree(), fontawesome, bootstrap], {
+      overwrite: true
+  });
+
+  app.toTree(merged);
+
+
 
   return app.toTree();
 };
