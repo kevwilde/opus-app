@@ -1,12 +1,18 @@
 <div class="row row-main">
-  {{traffic-map}}
+
+  <ul>
+    <li>
+      {{#link-to 'traffic'}}
+        <i class="fa fa-car"></i> Traffic
+      {{/link-to}}
+    </li>
+  </ul>
+
 </div>
 <div class="row row-bottom">
   <div class="col-xs-4">
     <div class="padding-default">
-      {{#link-to 'dashboard'}}
-        {{the-logo title='traffic'}}
-      {{/link-to}}
+      {{the-logo}}
     </div>
   </div>
   <div class="col-xs-8">
