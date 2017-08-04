@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('traffic');
   this.route('dashboard', { path: '/' });
+  this.route('music');
 });
 
 export default Router;

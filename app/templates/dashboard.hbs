@@ -1,13 +1,20 @@
-<div class="row row-main">
-
-  <ul>
-    <li>
-      {{#link-to 'traffic'}}
-        <i class="fa fa-car"></i> Traffic
-      {{/link-to}}
-    </li>
-  </ul>
-
+<div class="row row-main padding-default text-center">
+  <div class="col-xs-6">
+    {{#link-to 'traffic'}}
+      <div class="btn btn-sq-lg btn-light">
+        <i class="fa fa-car fa-5x"></i><br/><br/>
+        Traffic
+      </div>
+    {{/link-to}}
+  </div>
+  <div class="col-xs-6">
+    {{#link-to 'music'}}
+      <div class="btn btn-sq-lg btn-light">
+        <i class="fa fa-music fa-5x"></i><br/><br/>
+        Music
+      </div>
+    {{/link-to}}
+  </div>
 </div>
 <div class="row row-bottom">
   <div class="col-xs-4">
