@@ -5,7 +5,14 @@
   src: url('../fonts/aqua.ttf') format('truetype');
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 480px;
+  widows: 800px;
+  overflow: hidden;
   background-color: #090909;
   color: #888;
 }
@@ -91,9 +98,12 @@ a, a:active, a:hover, a:visited {
   font-weigh: lighter;
   color: #ccc;
 }
-
+.padding-for-logo {
+  padding-top: 5px;
+}
 
 .time {
   font-size: 4.5em;
-  line-height: 60px;
+  line-height: 75px;
+  font-family: aqua;
 }
