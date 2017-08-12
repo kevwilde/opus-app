@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('traffic');
   this.route('dashboard', { path: '/' });
   this.route('music');
+  this.route('calendar');
+  this.route('settings');
 });
 
 export default Router;

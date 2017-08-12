@@ -1,0 +1,17 @@
+<div class="row-main">
+  {{yield}}
+</div>
+
+
+<div class="row-bottom">
+  <div class="col-xs-4">
+    {{#link-to 'dashboard'}}
+      {{the-logo title=subtitle}}
+    {{/link-to}}
+  </div>
+  <div class="col-xs-8">
+    <div class="pull-right padding-default">
+      {{the-time}}
+    </div>
+  </div>
+</div>
