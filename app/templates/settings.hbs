@@ -1,8 +1,31 @@
 {{#main-window subtitle='settings'}}
 <div class="row padding-large">
 
-  <div class="btn-option">
-    <i class="fa fa-sign-out fa-3x"></i> Shutdown
+  <div class="col-xs-4">
+    <div class="btn btn-option" {{action 'reboot' }}>
+      <i class="fa fa-repeat fa-3x"></i>
+      <div>
+        Reboot
+      </div>
+    </div>
+
+    <div class="btn btn-option" {{action 'shutdown' }}>
+      <i class="fa fa-sign-out fa-3x"></i>
+      <div>
+        Shutdown
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-xs-4">
+
+
+  </div>
+
+  <div class="col-xs-4">
+
+
   </div>
 
 </div>

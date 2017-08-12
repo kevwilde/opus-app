@@ -54,7 +54,7 @@ a, a:active, a:hover, a:visited {
   .fa {
     color: @accentOne;
   }
-  .btn-sq-lg {
+  .btn-dashboard {
     padding: 20px;
     background-color: @backgroundColorLight;
   }
@@ -91,6 +91,32 @@ a, a:active, a:hover, a:visited {
   font-size: 0.6em;
   .logo {
     letter-spacing: -4px;
+  }
+}
+
+.btn-option {
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: @backgroundColorLight;
+  margin-bottom: 15px;
+  text-align: left;
+
+  i {
+    float: left;
+    margin-left: 10px;
+  }
+  div {
+    padding: 10px 0;
+    margin-left: 60px;
+  }
+}
+
+.btn:active {
+  background-color: @accentOne;
+  color: @backgroundColorLight;
+  .fa {
+    color: @backgroundColorLight;
   }
 }
 
