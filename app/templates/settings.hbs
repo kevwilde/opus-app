@@ -25,6 +25,22 @@
 
   <div class="col-xs-4">
 
+    {{#if session.isAuthenticated}}
+      <div class="btn btn-option" {{action 'invalidateSession' }}>
+        <img src="{{ model.image.url }}" alt="" class="pull-left" style="height: 50px; border-radius: 25px;">
+        <div style="padding: 5px 0;">
+          {{ model.displayName }}<br />
+          Sign out of Google
+        </div>
+      </div>
+    {{else}}
+      <div class="btn btn-option" {{action 'authenticateSession' }}>
+        <i class="fa fa-google fa-3x"></i>
+        <div>
+          Sign into Google
+        </div>
+      </div>
+    {{/if}}
 
   </div>
 
