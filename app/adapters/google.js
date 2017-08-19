@@ -8,8 +8,5 @@ const { computed, inject, isNone } = Ember;
 
 export default RESTAdapter.extend(DataAdapterMixin, {
   authorizer: 'authorizer:google',
-
   host: 'https://www.googleapis.com',
-
-
 });

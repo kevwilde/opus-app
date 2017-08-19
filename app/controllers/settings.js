@@ -15,8 +15,11 @@ export default Ember.Controller.extend({
     },
     authenticateSession: function() {
       this.get('session').authenticate('authenticator:torii', 'google-oauth2-bearer-v2').then(function() {
+        // Fetch personal information
         let me = this.get('store').queryRecord('google-user', 'me');
         this.set('model', me);
+        // Sync calendar list
+        this.get('store').query('google-calendar', {});
       }.bind(this));
     },
     invalidateSession: function() {

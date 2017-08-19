@@ -3,6 +3,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "fontawesome#^4.7.0",
-    "ic-ajax": "^2.0.2"
+    "ic-ajax": "^2.0.2",
+    "fullcalendar": "^3.4.0"
   }
 }

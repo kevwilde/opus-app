@@ -23,6 +23,17 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.torii = {
+    providers: {
+      'google-oauth2-bearer-v2': {
+        apiKey: "<GOOGLE-API-KEY>",
+        redirectUri: "http://localhost:4200/oauth2callback",
+        scope: 'https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/calendar.readonly'
+      }
+    },
+    allowUnsafeRedirect: true
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

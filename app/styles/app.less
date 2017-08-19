@@ -41,6 +41,11 @@ a, a:active, a:hover, a:visited {
   padding: 30px;
 }
 
+.overflow-hidden {
+  height: 100%;
+  overflow: hidden;
+}
+
 .ember-view {
   height: inherit;
 }
@@ -143,6 +148,36 @@ a, a:active, a:hover, a:visited {
   padding:2px;
 }
 
+.calendar {
+
+  .fc-unthemed {
+
+    .fc-list-view, .fc-scroller {
+      border-width: 0px;
+      height: 400px !important;
+    }
+
+    .fc-widget-header {
+      background: @backgroundColorLight;
+      color: @accentOne;
+      border-width: 0px;
+    }
+    .fc-list-heading {
+      font-size: 1.25em;
+    }
+    .fc-list-item {
+      font-size: 1.25em;
+    }
+    .fc-list-item:hover td {
+      background: @backgroundColor;
+    }
+
+    .fc-list-item * {
+      border-width: 0px;
+    }
+  }
+
+}
 
 .logo {
   font-family: aqua;

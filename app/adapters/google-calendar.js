@@ -4,8 +4,8 @@ import GoogleAdapter from './google';
 
 export default GoogleAdapter.extend({
 
-  urlForQueryRecord(id, modelName, snapshot) {
-    return this.get('host') + '/plus/v1/people/me';
+  urlForQuery(id, modelName, snapshot) {
+    return this.get('host') + '/calendar/v3/users/me/calendarList';
   }
 
 });

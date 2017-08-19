@@ -25,6 +25,7 @@ module.exports = function(defaults) {
 
   app.import('bower_components/bootstrap/dist/js/bootstrap.js');
   app.import('bower_components/ic-ajax/dist/named-amd/main.js');
+  app.import('bower_components/fullcalendar/dist/locale/nl-be.js');
 
   var bootstrap = new funnel('bower_components/bootstrap/fonts', {
     srcDir: '/',
